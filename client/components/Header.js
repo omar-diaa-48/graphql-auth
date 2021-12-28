@@ -43,7 +43,7 @@ class Header extends Component {
     render(){
 
         return(
-            <nav>
+            <nav style={{marginBottom:"2em"}} >
                 <div className="nav-wrapper" >
                     <Link to="/" >Home</Link>
                     <ul className="right" >
