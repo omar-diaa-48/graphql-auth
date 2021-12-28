@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { graphql } from "react-apollo";
 import { Link } from "react-router"; 
 import { currentUserQuery } from "../queries";
-import { logoutMutation } from "../mutations"
+import { signoutMutation } from "../mutations"
 
 class Header extends Component {
     handleLogout(){
@@ -43,7 +43,7 @@ class Header extends Component {
     render(){
 
         return(
-            <nav style={{marginBottom:"2em"}} >
+            <nav style={{marginBottom:"2em", paddingLeft:'2em', paddingRight:'2em'}} >
                 <div className="nav-wrapper" >
                     <Link to="/" >Home</Link>
                     <ul className="right" >
@@ -55,6 +55,6 @@ class Header extends Component {
     }
 }
 
-export default graphql(logoutMutation)(
+export default graphql(signoutMutation)(
     graphql(currentUserQuery)(Header)
 )

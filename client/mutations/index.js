@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
 
-export const logoutMutation = gql`
+export const signoutMutation = gql`
     mutation {
         logout {
             id
@@ -9,7 +9,7 @@ export const logoutMutation = gql`
     }
 `;
 
-export const loginMutation = gql`
+export const signinMutation = gql`
     mutation Login($email:String, $password:String){
         login(email:$email, password:$password){
             id

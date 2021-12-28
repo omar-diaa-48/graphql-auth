@@ -18,7 +18,7 @@ class AuthForm extends Component {
 
     handleSubmit(e){
         e.preventDefault();
-        console.log(this.state);
+        this.props.handleAction(this.state)
     }
 
     render() {
@@ -33,7 +33,7 @@ class AuthForm extends Component {
                         <label>Password</label>
                         <input name='password' value={this.state.password} onChange={e => this.handleChange(e)} />
                     </div>
-                    <button className="btn  " >Submit</button>
+                    <button className="btn" >Submit</button>
                 </form>
             </div>
         )
