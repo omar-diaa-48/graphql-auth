@@ -3,6 +3,7 @@ import { graphql } from "react-apollo";
 import { signupMutation } from "../mutations";
 import AuthForm from "../shared-components/AuthForm";
 import {hashHistory} from 'react-router'
+import { currentUserQuery } from '../queries'
 
 class SignupForm extends Component {
     handleSignup(form){

@@ -1,7 +1,9 @@
 import React from "react";
+import { graphql } from "react-apollo";
 import Header from "./Header";
 
 const App = (props) => {
+
     return (
         <div>
             <Header />
